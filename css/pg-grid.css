@@ -1,0 +1,143 @@
+.pg-container {
+    position: relative;
+    width: 80%;
+	float: left;
+    }
+ 
+.pg-container ul,
+.pg-container li {
+    padding: 0;
+    margin: 0;
+	margin-bottom: 10px;
+    list-style-type: none;
+}
+ 
+.pg-grid {
+    position: relative;
+    text-align: center;
+}
+/* If flexbox is supported we'll use it to lay out the grid */
+.flexbox .pg-grid {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -webkit-justify-content: center;
+}
+ 
+.pg-grid > li {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 5%;
+    padding: 10px 2% 20px 2%;
+    text-align: left;
+    float: left;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}	
+ 
+.flexbox .pg-grid > li {
+    display: block;
+}
+ 
+ 
+.pg-content {
+    position: relative;
+}
+ 
+/* The item with the images will have perspective */
+.pg-item {
+    width: 100%;
+    position: relative;
+    -webkit-perspective: 1400px;
+    -moz-perspective: 1000px;
+    perspective: 1000px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+ 
+.pg-item img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+ }
+ 
+
+ 
+.pg-info {
+    padding-top: 0px;
+}
+ 
+.pg-info:before,
+.pg-info:after {
+    content: " ";
+    display: table;
+}
+ 
+.pg-info:after {
+    clear: both;
+}
+ 
+.pg-info h3,
+.pg-info p {
+    float: left;
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+}
+ 
+.pg-info h3 {
+	text-align: center;
+	font-size: 0.890em;
+    font-weight: bold;
+	text-transform: uppercase;
+	border-bottom: 1px solid rgb(145, 180, 216);
+	color:#306196
+}
+ 
+.pg-info p{
+    font-size: 0.813em;
+	font-weight: normal;
+    text-align: left;
+	color:#7e7e7e;
+}
+
+.pg-info p.pg-details {
+line-height:15px;
+padding-top:10px
+
+}
+/* Media Queries */
+ 
+@media screen and (max-width: 68.125em) {
+    .pg-grid > li {
+        width: 40%;
+		margin: 1% 1%;
+    }
+	.pg-container {
+    width: 100%;
+    }
+}
+ 
+@media screen and (max-width: 30.125em) {
+    .pg-grid > li {
+        width: 44%;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+	.pg-container {
+    width: 100%;
+    }
+}
