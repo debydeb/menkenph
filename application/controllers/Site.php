@@ -10,12 +10,22 @@ class Site extends CI_Controller {
 		}
 	}
 
+
+
 	public function home() {
 		
 		/*----------------
 			DATA ARRAY
 		------------------*/
 		$data['title'] = "Home";
+		//subMenu array
+		$subMenu = array( 	'imp'    => $this->menu_model->getMenu('impdent'), 
+							'prote'  => $this->menu_model->getMenu('prote'),
+							'biomat' => $this->menu_model->getMenu('biomat'),
+							'cirgu'  => $this->menu_model->getMenu('cirug'),
+							'mate'   => $this->menu_model->getMenu('mate'),
+							'equip'  => $this->menu_model->getMenu('equip')
+						);
 
 
 		/*----------------
@@ -27,11 +37,13 @@ class Site extends CI_Controller {
 		if ($this->agent->is_mobile()) :
 			$this->load->view('header_view', $data);
 		else :
-			$this->load->view('header_desktop_view', $data);
+			$this->load->view('header_desktop_view', $subMenu);
 		endif;
 
 		$this->load->view('home_view', $data);
 	}
+
+
 
 	public function product($start = 0, $par1 = null, $par2 = null, $par3 = null) {
 
@@ -84,6 +96,5 @@ class Site extends CI_Controller {
 	public function about() {
 		//About Page
 	}
-
 
 }

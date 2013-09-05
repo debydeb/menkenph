@@ -1,8 +1,10 @@
 <script>
   $(document).ready(function() {
+    //Product dropdown
     $('#products').click(function () {
         $('#subMenu').slideToggle();
     });
+
   });
 </script>
 
@@ -27,20 +29,95 @@
 
   <div id="subMenu">
     <ul id="mainList">
-      <li>implantes
+      <li class="mnu-parentLi">implantes
         <ul class="itemMnuChild">
-          <li>uno</li>
-          <li>dos</li>
-          <li>tres</li>
-          <li>cuatro</li>
+          <?php if (isset( $imp )) : foreach( $imp as $key=>$row ) :
+                  if ( $key < 5 ) :?>
+                <li class="fstColumn"><a href="<?php ?>"><?php echo $row->listName; ?></a></li>
+              <?php elseif ( $key == 5 ) : ?>
+                <li class="sndColumn firstSndColumn"><a href="<?php ?>"><?php echo $row->listName; ?></a></li>
+              <?php else : ?>
+                <li class="sndColumn"><a href="<?php ?>"><?php echo $row->listName; ?></a></li>
+              <?php endif;
+               endforeach; 
+             endif; ?>
         </ul>
       </li>
-      
-      <li>prótesis</li>
-      <li>biomateriales</li>
-      <li>cirugía</li>
-      <li>materiales</li>
-      <li>equipamiento</li>
+
+      <li class="mnu-parentLi">prótesis
+        <ul class="itemMnuChild">
+          <?php if (isset( $prote )) : foreach( $prote as $key=>$row ) :
+                  if ( $key < 5 ) :?>
+                <li class="fstColumn"><a href="<?php ?>"><?php echo $row->listName; ?></a></li>
+              <?php elseif ( $key == 5 ) : ?>
+                <li class="sndColumn firstSndColumn"><a href="<?php ?>"><?php echo $row->listName; ?></a></li>
+              <?php else : ?>
+                <li class="sndColumn"><a href="<?php ?>"><?php echo $row->listName; ?></a></li>
+              <?php endif;
+               endforeach; 
+             endif; ?>
+        </ul>
+      </li>
+
+      <li class="mnu-parentLi">biomateriales
+        <ul class="itemMnuChild">
+          <?php if (isset( $biomat )) : foreach( $biomat as $key=>$row ) :
+                  if ( $key < 5 ) :?>
+                <li class="fstColumn"><a href="<?php ?>"><?php echo $row->listName; ?></a></li>
+              <?php elseif ( $key == 5 ) : ?>
+                <li class="sndColumn firstSndColumn"><a href="<?php ?>"><?php echo $row->listName; ?></a></li>
+              <?php else : ?>
+                <li class="sndColumn"><a href="<?php ?>"><?php echo $row->listName; ?></a></li>
+              <?php endif;
+               endforeach; 
+             endif; ?>
+        </ul>
+      </li>
+
+      <li class="mnu-parentLi">cirugía
+        <ul class="itemMnuChild">
+          <?php if (isset( $cirug )) : foreach( $cirug as $key=>$row ) :
+                  if ( $key < 5 ) :?>
+                <li class="fstColumn"><a href="<?php ?>"><?php echo $row->listName; ?></a></li>
+              <?php elseif ( $key == 5 ) : ?>
+                <li class="sndColumn firstSndColumn"><a href="<?php ?>"><?php echo $row->listName; ?></a></li>
+              <?php else : ?>
+                <li class="sndColumn"><a href="<?php ?>"><?php echo $row->listName; ?></a></li>
+              <?php endif;
+               endforeach; 
+             endif; ?>
+        </ul>
+      </li>
+
+      <li class="mnu-parentLi">materiales
+        <ul class="itemMnuChild">
+          <?php if (isset( $mate )) : foreach( $mate as $key=>$row ) :
+                  if ( $key < 5 ) :?>
+                <li class="fstColumn"><a href="<?php ?>"><?php echo $row->listName; ?></a></li>
+              <?php elseif ( $key == 5 ) : ?>
+                <li class="sndColumn firstSndColumn"><a href="<?php ?>"><?php echo $row->listName; ?></a></li>
+              <?php else : ?>
+                <li class="sndColumn"><a href="<?php ?>"><?php echo $row->listName; ?></a></li>
+              <?php endif;
+               endforeach; 
+             endif; ?>
+        </ul>
+      </li>
+
+      <li class="mnu-parentLi">equipamiento
+        <ul class="itemMnuChild">
+          <?php if (isset( $equip )) : foreach( $equip as $key=>$row ) :
+                  if ( $key < 5 ) :?>
+                <li class="fstColumn"><a href="<?php ?>"><?php echo $row->listName; ?></a></li>
+              <?php elseif ( $key == 5 ) : ?>
+                <li class="sndColumn firstSndColumn"><a href="<?php ?>"><?php echo $row->listName; ?></a></li>
+              <?php else : ?>
+                <li class="sndColumn"><a href="<?php ?>"><?php echo $row->listName; ?></a></li>
+              <?php endif;
+               endforeach; 
+             endif; ?>
+        </ul>
+      </li>
     </ul>
   </div>
 </div>
