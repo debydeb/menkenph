@@ -470,11 +470,26 @@ color:white;
         $CONTAINER
     \* ---------------------------*/
     .container {
-        /*box model*/
         position: absolute;
         z-index: -2;
-        margin-top:  100px;
+
+        /*box model*/
+        width: 100%;
     }
+
+    .banner { 
+        position: relative;
+        overflow: auto;
+        
+        height: 400px;
+    }
+        .banner li { list-style: none; height: 400px; color: black; }
+            .banner ul li { float: left; }
+    
+    #resto {
+        height: 400px;
+    }
+        
 }
 
 /* ==========================================================================

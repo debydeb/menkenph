@@ -1,3 +1,6 @@
+<!-- slider library -->
+<script src="//unslider.com/unslider.min.js"></script>
+
 <script>
   $(document).ready(function() {
     //Product dropdown
@@ -5,12 +8,12 @@
         $('#subMenu').slideToggle();
     });
 
+    $('.banner').unslider();
   });
 </script>
 
 <div class="header-container">
   <header class="wrapper clearfix">
-    
     <h1 class="title">
       <a href="http://www.menkenpharma.com/">Menken Pharma</a>
     </h1>
