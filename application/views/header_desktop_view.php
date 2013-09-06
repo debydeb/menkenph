@@ -8,7 +8,11 @@
         $('#subMenu').slideToggle();
     });
 
-    $('.banner').unslider();
+    $('.banner').unslider({
+        speed: 500,
+        delay: 5000,
+        dots: true
+    });
   });
 </script>
 
@@ -18,16 +22,16 @@
       <a href="http://www.menkenpharma.com/">Menken Pharma</a>
     </h1>
 
-    <a id="bt_fb" href="#" style="outline:0">Facebook</a>
 
     <div id="menu">
       <ul>
         <li class="first" id="products"><a href="#">Productos</a></li>
         <li class="first"><a href="#">Quiénes somos</a></li>
-        <li class="first"><a href="#">Pedidos</a></li>
+        <!--<li class="first"><a href="#">Pedidos</a></li>-->
         <li class="first"><a href="#">Contacto</a></li>
       </ul>
     </div>   
+    <a id="bt_fb_desktop" href="#" style="outline:0">Facebook</a>
   </header>
 
   <div id="subMenu">

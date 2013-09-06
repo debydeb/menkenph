@@ -97,4 +97,9 @@ class Site extends CI_Controller {
 		//About Page
 	}
 
+	public function contact() {
+		//Contact Page
+	}
+	
+
 }

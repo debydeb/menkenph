@@ -42,6 +42,8 @@ $route['default_controller'] = "Site";
 $route['404_override'] = '';
 
 $route['product/(:any)'] = "site/product/$1";
+$route['about'] = "site/about";
+$route['contact'] = "site/contact";
 
 
 /* End of file routes.php */
