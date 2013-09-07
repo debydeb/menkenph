@@ -2,7 +2,7 @@
 
 class menu_model extends CI_Model {
 
-	function getMenu( $fstParent, $sndParent = null ) {
+	function getMenu( $fstParent, $sndParent = null) {
 		
 		//Set the WHERE statement for the query.
 		$where = "fstParent = '{$fstParent}'";

@@ -195,30 +195,28 @@ float: right;
 }
 
 .submenu-m {
-clear:both;
-width:100%;
+    width:100%;
 }
 
 .submenu-m ul{
-margin:0px;
-margin-top:5px;
-margin-bottom:5px;
+    margin:0;
+    list-style: none;
 }
 
 .submenu-m li {
-float:left;
-background: rgb(155,176,199);
-list-style: none;
-margin: 2px;
+    float:left;
+    background: rgb(155,176,199);
+    margin: 3px;
 }
 
 .submenu-m li a{
-font-size:12px;
-text-decoration: none;
-width: auto;
-padding: 3px 5px;
-float: left;
-color:white;
+    font-size:12px;
+    text-decoration: none;
+
+    padding: 3px 5px;
+ 
+    float: left;
+    color:white;
 }
 
 .submenu-m li#active{
@@ -356,6 +354,8 @@ color:white;
     CONTAINER
     ----BANNER
     ----CONTENT
+
+    PRODUCTS
 */
 
     .wrapper {
@@ -369,7 +369,10 @@ color:white;
 
     .header-container {
         background-image: none;
-        background-color: #2F5C92;
+        background: linear-gradient(#31699C 50%, #2E5491);
+        background: linear-gradient(#31699C 50%, #2E5491);
+        background: linear-gradient(#31699C 50%, #2E5491);
+        background: linear-gradient(#31699C 50%, #2E5491);
 
         border-bottom: 1px solid rgba(0, 0, 0, .5);
         box-shadow: 0 2px 10px rgba(0, 0, 0, .5);
@@ -610,6 +613,14 @@ color:white;
             .content-grid p {
                 color: grey;
             }
+
+    /* ---------------------------*\
+        $PRODUCTS
+    \* ---------------------------*/
+    #pg-container {
+        z-index: -2;
+    }
+
 }
 
 /* ==========================================================================

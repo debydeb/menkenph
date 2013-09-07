@@ -40,11 +40,11 @@
         <ul class="itemMnuChild">
           <?php if (isset( $imp )) : foreach( $imp as $key=>$row ) :
                   if ( $key < 5 ) :?>
-                <li class="fstColumn"><a href="<?php ?>"><?php echo $row->listName; ?></a></li>
+                <li class="fstColumn"><a href="<?php echo base_url() . 'product/0/' . $row->urlLink; ?>"><?php echo $row->listName; ?></a></li>
               <?php elseif ( $key == 5 ) : ?>
-                <li class="sndColumn firstSndColumn"><a href="<?php ?>"><?php echo $row->listName; ?></a></li>
+                <li class="sndColumn firstSndColumn"><a href="<?php echo base_url() . 'product/0/' . $row->urlLink; ?>"><?php echo $row->listName; ?></a></li>
               <?php else : ?>
-                <li class="sndColumn"><a href="<?php ?>"><?php echo $row->listName; ?></a></li>
+                <li class="sndColumn"><a href="<?php echo base_url() . 'product/0/' . $row->urlLink; ?>"><?php echo $row->listName; ?></a></li>
               <?php endif;
                endforeach; 
              endif; ?>
@@ -55,11 +55,11 @@
         <ul class="itemMnuChild">
           <?php if (isset( $prote )) : foreach( $prote as $key=>$row ) :
                   if ( $key < 5 ) :?>
-                <li class="fstColumn"><a href="<?php ?>"><?php echo $row->listName; ?></a></li>
+                <li class="fstColumn"><a href="<?php echo base_url() . 'product/0/' . $row->urlLink; ?>"><?php echo $row->listName; ?></a></li>
               <?php elseif ( $key == 5 ) : ?>
-                <li class="sndColumn firstSndColumn"><a href="<?php ?>"><?php echo $row->listName; ?></a></li>
+                <li class="sndColumn firstSndColumn"><a href="<?php echo base_url() . 'product/0/' . $row->urlLink; ?>"><?php echo $row->listName; ?></a></li>
               <?php else : ?>
-                <li class="sndColumn"><a href="<?php ?>"><?php echo $row->listName; ?></a></li>
+                <li class="sndColumn"><a href="<?php echo base_url() . 'product/0/' . $row->urlLink; ?>"><?php echo $row->listName; ?></a></li>
               <?php endif;
                endforeach; 
              endif; ?>
@@ -70,11 +70,11 @@
         <ul class="itemMnuChild">
           <?php if (isset( $biomat )) : foreach( $biomat as $key=>$row ) :
                   if ( $key < 5 ) :?>
-                <li class="fstColumn"><a href="<?php ?>"><?php echo $row->listName; ?></a></li>
+                <li class="fstColumn"><a href="<?php echo base_url() . 'product/0/' . $row->urlLink; ?>"><?php echo $row->listName; ?></a></li>
               <?php elseif ( $key == 5 ) : ?>
-                <li class="sndColumn firstSndColumn"><a href="<?php ?>"><?php echo $row->listName; ?></a></li>
+                <li class="sndColumn firstSndColumn"><a href="<?php echo base_url() . 'product/0/' . $row->urlLink; ?>"><?php echo $row->listName; ?></a></li>
               <?php else : ?>
-                <li class="sndColumn"><a href="<?php ?>"><?php echo $row->listName; ?></a></li>
+                <li class="sndColumn"><a href="<?php echo base_url() . 'product/0/' . $row->urlLink; ?>"><?php echo $row->listName; ?></a></li>
               <?php endif;
                endforeach; 
              endif; ?>
@@ -85,11 +85,11 @@
         <ul class="itemMnuChild">
           <?php if (isset( $cirug )) : foreach( $cirug as $key=>$row ) :
                   if ( $key < 5 ) :?>
-                <li class="fstColumn"><a href="<?php ?>"><?php echo $row->listName; ?></a></li>
+                <li class="fstColumn"><a href="<?php echo base_url() . 'product/0/' . $row->urlLink; ?>"><?php echo $row->listName; ?></a></li>
               <?php elseif ( $key == 5 ) : ?>
-                <li class="sndColumn firstSndColumn"><a href="<?php ?>"><?php echo $row->listName; ?></a></li>
+                <li class="sndColumn firstSndColumn"><a href="<?php echo base_url() . 'product/0/' . $row->urlLink; ?>"><?php echo $row->listName; ?></a></li>
               <?php else : ?>
-                <li class="sndColumn"><a href="<?php ?>"><?php echo $row->listName; ?></a></li>
+                <li class="sndColumn"><a href="<?php echo base_url() . 'product/0/' . $row->urlLink; ?>"><?php echo $row->listName; ?></a></li>
               <?php endif;
                endforeach; 
              endif; ?>
@@ -100,11 +100,11 @@
         <ul class="itemMnuChild">
           <?php if (isset( $mate )) : foreach( $mate as $key=>$row ) :
                   if ( $key < 5 ) :?>
-                <li class="fstColumn"><a href="<?php ?>"><?php echo $row->listName; ?></a></li>
+                <li class="fstColumn"><a href="<?php echo base_url() . 'product/0/' . $row->urlLink; ?>"><?php echo $row->listName; ?></a></li>
               <?php elseif ( $key == 5 ) : ?>
-                <li class="sndColumn firstSndColumn"><a href="<?php ?>"><?php echo $row->listName; ?></a></li>
+                <li class="sndColumn firstSndColumn"><a href="<?php echo base_url() . 'product/0/' . $row->urlLink; ?>"><?php echo $row->listName; ?></a></li>
               <?php else : ?>
-                <li class="sndColumn"><a href="<?php ?>"><?php echo $row->listName; ?></a></li>
+                <li class="sndColumn"><a href="<?php echo base_url() . 'product/0/' . $row->urlLink; ?>"><?php echo $row->listName; ?></a></li>
               <?php endif;
                endforeach; 
              endif; ?>
@@ -115,11 +115,11 @@
         <ul class="itemMnuChild">
           <?php if (isset( $equip )) : foreach( $equip as $key=>$row ) :
                   if ( $key < 5 ) :?>
-                <li class="fstColumn"><a href="<?php ?>"><?php echo $row->listName; ?></a></li>
+                <li class="fstColumn"><a href="<?php echo base_url() . 'product/0/' . $row->urlLink; ?>"><?php echo $row->listName; ?></a></li>
               <?php elseif ( $key == 5 ) : ?>
-                <li class="sndColumn firstSndColumn"><a href="<?php ?>"><?php echo $row->listName; ?></a></li>
+                <li class="sndColumn firstSndColumn"><a href="<?php echo base_url() . 'product/0/' . $row->urlLink; ?>"><?php echo $row->listName; ?></a></li>
               <?php else : ?>
-                <li class="sndColumn"><a href="<?php ?>"><?php echo $row->listName; ?></a></li>
+                <li class="sndColumn"><a href="<?php echo base_url() . 'product/0/' . $row->urlLink; ?>"><?php echo $row->listName; ?></a></li>
               <?php endif;
                endforeach; 
              endif; ?>
