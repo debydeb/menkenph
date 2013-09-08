@@ -6,17 +6,19 @@
       <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>Menken Pharma - <?php echo $title; ?></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
         <link rel="stylesheet" href="<?php echo base_url() . 'css/normalize.min.css'; ?>" />
-        <link rel="stylesheet" href="<?php echo base_url() . 'css/main.css'; ?>" />
         <link rel="stylesheet" href="<?php echo base_url() . 'css/pg-grid.css'; ?>" />
-        
+        <link rel="stylesheet" href="<?php echo base_url() . 'css/bootstrap.css'; ?>" />
+        <link rel="stylesheet" href="<?php echo base_url() . 'css/main.css'; ?>" />
+
         <!-- Include Sidr bundled CSS theme -->
         <link rel="stylesheet" href="<?php echo base_url() . 'css/jquery.sidr.dark.css'; ?>"/>    
-
+        
+        <link rel="icon" type="image/jpg" href="img/favicon.png" />
 
 
         <script src="<?php echo base_url(); ?>js/jquery-1.9.1.js"></script>

@@ -36,6 +36,8 @@
 								</li>
 							<?php endforeach;?>
 							
+						</ul>
+						</div>
 							<?php echo $this->pagination->create_links(); ?>
 						<?php else : ?>
 							<h1 class="error">No se encontraron productos.</h1>

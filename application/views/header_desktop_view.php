@@ -19,16 +19,16 @@
 <div class="header-container">
   <header class="wrapper clearfix">
     <h1 class="title">
-      <a href="http://www.menkenpharma.com/">Menken Pharma</a>
+      <a href="<?php echo base_url()?>">Menken Pharma</a>
     </h1>
 
 
     <div id="menu">
       <ul>
         <li class="first" id="products"><a href="#">Productos</a></li>
-        <li class="first"><a href="#">Quiénes somos</a></li>
+        <li class="first"><a href="<?php echo base_url() . 'about'; ?>">Quiénes somos</a></li>
         <!--<li class="first"><a href="#">Pedidos</a></li>-->
-        <li class="first"><a href="#">Contacto</a></li>
+        <li class="first"><a href="<?php echo base_url() . 'contact'; ?>">Contacto</a></li>
       </ul>
     </div>   
     <a id="bt_fb_desktop" href="#" style="outline:0">Facebook</a>

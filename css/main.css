@@ -26,7 +26,7 @@ textarea {
 }
 
 body {
-    font-size: 1em;
+    font-size: 20px;
     line-height: 1.4;
 }
 
@@ -52,6 +52,8 @@ fieldset {
 textarea {
     resize: vertical;
 }
+
+
 
 .chromeframe {
     margin: 0.2em 0;
@@ -194,9 +196,6 @@ float: right;
     padding: 0px 5% 10px;
 }
 
-.submenu-m {
-    width:100%;
-}
 
 .submenu-m ul{
     margin:0;
@@ -338,7 +337,7 @@ float: right;
     }
 }
 
-@media only screen and (min-width: 1140px) {
+@media only screen and (min-width: 860px) {
 
 /* ===============
     Maximal Width
@@ -357,6 +356,17 @@ float: right;
 
     PRODUCTS
 */
+    
+    .heading {
+        font-family: 'Kautiva', sans-serif;
+        font-weight: bold;
+        font-size: 3em;
+        color: #2E5491;
+
+        padding-bottom: 20px;
+
+        margin: 20px;
+    }
 
     .wrapper {
         width: 1026px; /* 1140px - 10% for margins */
@@ -407,9 +417,9 @@ float: right;
         }
 
             #menu li, ul, a {
+                color: white;
                 list-style: none;
                 padding: 0;
-                color: white;
                 
                 /*font & text*/
                 text-decoration: none;
@@ -454,15 +464,22 @@ float: right;
                 width: 17%;
                 height: 100%;
                 margin: 0;
-                padding: 20px 0 20px 20px;
                 float: left;
 
                 /*color*/
                 background: #212222;
+
+                box-shadow: inset -2px 2px 5px rgba(0, 0, 0, .8);
             }
 
-                #mainList li { margin-bottom: 10px;}
+                #mainList li { 
+                    padding: 10px;
+                }
                             
+                #mainList .mnu-parentLi:hover{
+                    box-shadow: inset 2px -2px 5px rgba(0, 0, 0, .8);
+                    cursor: pointer;
+                }
 
                 #mainList li:hover > ul {
                     display: block;
@@ -473,12 +490,13 @@ float: right;
 
                         /*box model*/
                         position: absolute;
-                        left: 18.8%;
-                        top: 2%;
+                        left: 11.8%;
+                        top: 0;
                         width: 760px;
                         height: 100%;
-
-                        padding-left: 5%;
+                        
+                        margin: 0;
+                        padding-left: 10%;
                         
                         /*font*/
                         font-family: 'Arial', sans-serif;
@@ -494,7 +512,7 @@ float: right;
                     }
 
                     .firstSndColumn {
-                        margin-top: -180px;
+                        margin-top: -230px;
                     }
     
     /* ---------------------------*\
@@ -620,6 +638,44 @@ float: right;
     #pg-container {
         z-index: -2;
     }
+
+    /* ---------------------------*\
+        $ABOUT
+    \* ---------------------------*/
+
+    #about {
+        width: 1024px;
+
+        margin: 50px auto;
+    }
+
+        #about p {
+            font-family: 'Arial', sans-serif;
+        }
+
+    /* ---------------------------*\
+        $CONTACT
+    \* ---------------------------*/
+
+    #contact {
+        width: 1024px;
+        margin: 50px auto;
+        min-height: 700px;
+    }
+
+        #contactForm {
+            width: 50%;
+            float: right;
+        }
+        
+        #contactInfo {
+            width: 50%;
+            float: left;
+        }
+
+            #contactInfo p { width: 90%; }
+
+
 
 }
 
