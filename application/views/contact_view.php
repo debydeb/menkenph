@@ -2,8 +2,8 @@
 	<div id="contact">
 		<div id="contactInfo">
 			<h1 class="heading">Contactenos</h1>
-			<p>Contactenos atravez de nuestro formulario, le responderemos a la brevedad. Además por este medio puede realizar el pedido de alguno de nuestros productos.
-				<br/>Le recomendamos proporcionar datos veridicos a fin de poder contactarnos con usted.</p>
+			<p>Cont&aacute;ctenos a trav&eacute;s de nuestro formulario, le responderemos a la brevedad. Adem&aacute;s por este medio tambi&eacute;n puede realizar el pedido de nuestros productos.
+				<br/>Le recomendamos proporcionar datos ver&iacute;dicos a fin de poder contactarnos con usted.</p>
 		</div>
 
 		<div id="contactForm">
@@ -20,7 +20,7 @@
 				</div>
 				
 				<div class="form-group">
-					<label for="phone">Teléfono</label>
+					<label for="phone">Telefono</label>
 					<input type="text" id="phone" class="form-control" name="phone" placeholder="Teléfono...">
 				</div>
 

@@ -3,25 +3,25 @@
 			<ul>
 				<li style="background-image: url('<?php echo base_url(); ?>img/slider/slide1.jpg');">
 					<div class="info">
-						<h1>Pinza de mano</h1>
-						<p><strong>Detalle: </strong>Destornillador CA Hexagonal 0,048" Largo 25mm.</p>
-						<p><strong>Marca: </strong>ML Implant System</p>
+						<h1>Destornillador</h1>
+						<p><strong>Detalle: </strong>Destornillador Fijo</p>
+						<p><strong>Marca: </strong>FICO &amp; Br&uuml;cke</p>
 					</div>
 				</li>
 
 				<li style="background-image: url('<?php echo base_url(); ?>img/slider/slide2.jpg');">
 					<div class="info">
-						<h1>Titulo</h1>
-						<p><strong>Detalle: </strong> Pirulitos</p>
-						<p><strong>Marca: </strong> Pirulitos</p>
+						<h1>Mango de bistur&iacute;</h1>
+						<p><strong>Detalle: </strong> Mango de bistur&iacute; redondo y angulado</p>
+						<p><strong>Marca: </strong> FICO &amp; Br&uuml;cke</p>
 					</div>
 				</li>
 
 				<li style="background-image: url('<?php echo base_url(); ?>img/slider/slide3.jpg');">
 					<div class="info">
-						<h1>Titulo</h1>
-						<p><strong>Detalle: </strong> Pirulitos</p>
-						<p><strong>Marca: </strong> Pirulitos</p>
+						<h1>Martillo</h1>
+						<p><strong>Detalle: </strong> Martillo con extremos siliconados</p>
+						<p><strong>Marca: </strong> FICO &amp; Br&uuml;cke</p>
 					</div>
 				</li>
 			</ul>
@@ -29,18 +29,23 @@
 
 		<div id="content">
 			<div class="content-grid">
-				<h1>asesoramiento</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, consectetur, ipsam, tempora facilis doloribus beatae vel distinctio accusantium illum magni voluptates eveniet autem minus deserunt amet sit itaque et culpa.</p>
+				<h1>Investigaci&oacute;n<br/>y Desarrollo</h1>
+				<p>Innovar est&aacute; en el gen de Menken Pharma. A trav&eacute;s de 
+				acuerdos con Universidades Asociaciones y otras organizaciones 
+				propulsamos la investigaci&oacute;n y el desarrollo de nuevos productos.</p>
 			</div>
 			<div class="content-grid">
-				<h1>venta</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, at sunt laboriosam praesentium nisi enim neque ipsam recusandae architecto corporis possimus voluptates ea voluptate mollitia eligendi quisquam assumenda aperiam. Ex.</p>
+				<h1>Calidad</h1>
+				<p>Nuestro sistema de calidad continua 
+				asegura que Ud. est&aacute; recibiendo el material 
+				en perfectas condiciones de uso.</p>
 			</div>
 			<div class="content-grid">
-				<h1>servicio<br/>de<br/>post venta</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, at sunt laboriosam praesentium nisi enim neque ipsam recusandae architecto corporis possimus voluptates ea voluptate mollitia eligendi quisquam assumenda aperiam. Ex.</p>
+				<h1>Garant&iacute;a<br/>FICO &#38; Br&uuml;cke</h1>
+				<p>Los implantes est&aacute;n garantizados de por vida.
+				Los elementos prot&eacute;ticos por tres a&ntilde;os.
+				Ofrecemos la garant&iacute;a m&aacute;s extendida del 
+				pa&iacute;s porque sabemos qu&eacute; productos le hacemos llegar.</p>
 			</div>
 		</div>
 	</div>
-</body>
-</html>

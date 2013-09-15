@@ -20,9 +20,9 @@ class Site extends CI_Controller {
 		$data['title'] = "Home";
 		//subMenu array
 		$subMenu = array( 	'imp'    => $this->menu_model->getMenu('impdent'), 
-							'prote'  => $this->menu_model->getMenu('prote'),
-							'biomat' => $this->menu_model->getMenu('biomat'),
-							'cirgu'  => $this->menu_model->getMenu('cirug'),
+							'prote'  => $this->menu_model->getMenu('prote', ''),
+							'biomat' => $this->menu_model->getMenu('biomat', ''),
+							'cirug'  => $this->menu_model->getMenu('cirug', ''),
 							'mate'   => $this->menu_model->getMenu('mate'),
 							'equip'  => $this->menu_model->getMenu('equip')
 						);
@@ -41,9 +41,8 @@ class Site extends CI_Controller {
 		endif;
 
 		$this->load->view('home_view', $data);
+		$this->load->view('footer_view', $data);
 	}
-
-
 
 	public function product($start = 0, $par1 = null, $par2 = null, $par3 = null) {
 
@@ -102,12 +101,12 @@ class Site extends CI_Controller {
 		//Product results
 		$data['results'] = $this->products_model->getRecords($config['per_page'], $start, $par1, $par2, $par3);
 		//Get the submenu
-		$data['menu'] = $this->menu_model->getMenu($this->uri->segment(3));
+		$data['menu'] = $this->menu_model->getMenu($this->uri->segment(3), $this->uri->segment(4));
 
 		$subMenu = array( 	'imp'    => $this->menu_model->getMenu('impdent'), 
-							'prote'  => $this->menu_model->getMenu('prote'),
-							'biomat' => $this->menu_model->getMenu('biomat'),
-							'cirgu'  => $this->menu_model->getMenu('cirug'),
+							'prote'  => $this->menu_model->getMenu('prote', ''),
+							'biomat' => $this->menu_model->getMenu('biomat', ''),
+							'cirug'  => $this->menu_model->getMenu('cirug', ''),
 							'mate'   => $this->menu_model->getMenu('mate'),
 							'equip'  => $this->menu_model->getMenu('equip')
 						);
@@ -126,6 +125,7 @@ class Site extends CI_Controller {
 		endif;
 
 		$this->load->view('products_view', $data);
+		$this->load->view('footer_view', $data);
 	}
 
 	public function about() {
@@ -135,9 +135,9 @@ class Site extends CI_Controller {
 		$data['title'] = "About";
 		//subMenu array
 		$subMenu = array( 	'imp'    => $this->menu_model->getMenu('impdent'), 
-							'prote'  => $this->menu_model->getMenu('prote'),
-							'biomat' => $this->menu_model->getMenu('biomat'),
-							'cirgu'  => $this->menu_model->getMenu('cirug'),
+							'prote'  => $this->menu_model->getMenu('prote', ''),
+							'biomat' => $this->menu_model->getMenu('biomat', ''),
+							'cirug'  => $this->menu_model->getMenu('cirug', ''),
 							'mate'   => $this->menu_model->getMenu('mate'),
 							'equip'  => $this->menu_model->getMenu('equip')
 						);
@@ -156,6 +156,7 @@ class Site extends CI_Controller {
 		endif;
 
 		$this->load->view('about_view');
+		$this->load->view('footer_view', $data);
 	}
 
 	public function contact() {
@@ -165,9 +166,9 @@ class Site extends CI_Controller {
 		$data['title'] = "About";
 		//subMenu array
 		$subMenu = array( 	'imp'    => $this->menu_model->getMenu('impdent'), 
-							'prote'  => $this->menu_model->getMenu('prote'),
-							'biomat' => $this->menu_model->getMenu('biomat'),
-							'cirgu'  => $this->menu_model->getMenu('cirug'),
+							'prote'  => $this->menu_model->getMenu('prote', ''),
+							'biomat' => $this->menu_model->getMenu('biomat', ''),
+							'cirug'  => $this->menu_model->getMenu('cirug', ''),
 							'mate'   => $this->menu_model->getMenu('mate'),
 							'equip'  => $this->menu_model->getMenu('equip')
 						);
@@ -186,6 +187,7 @@ class Site extends CI_Controller {
 		endif;
 
 		$this->load->view('contact_view');
+		$this->load->view('footer_view', $data);
 	}
 	
 

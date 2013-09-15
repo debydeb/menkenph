@@ -28,6 +28,9 @@ textarea {
 body {
     font-size: 20px;
     line-height: 1.4;
+
+    position: relative;
+    z-index: -6;
 }
 
 hr {
@@ -196,32 +199,6 @@ float: right;
     padding: 0px 5% 10px;
 }
 
-
-.submenu-m ul{
-    margin:0;
-    list-style: none;
-}
-
-.submenu-m li {
-    float:left;
-    background: rgb(155,176,199);
-    margin: 3px;
-}
-
-.submenu-m li a{
-    font-size:12px;
-    text-decoration: none;
-
-    padding: 3px 5px;
- 
-    float: left;
-    color:white;
-}
-
-.submenu-m li#active{
-    background: rgb(158,190,225);
-}
-
 .footer-container{
     background-image: url('../img/bg_footer.jpg');
 	background-repeat:repeat-x;
@@ -249,9 +226,31 @@ float: right;
    Author's custom styles
    ========================================================================== */
 
+.submenu-m ul{
+    margin:0;
+    list-style: none;
+}
 
+.submenu-m li {
+    margin: 10px;
+}
 
+    .submenu-m li a{
+        font-size:12px;
+        text-decoration: none;
+        font-size: 1em;
 
+        padding: 3px 0;
+        color: rgba(0, 0, 0, .7);
+    }
+
+        .submenu-m li a:hover{
+            text-decoration: underline;
+        }
+
+        .submenu-m li#active{
+            background: rgb(158,190,225);
+        }
 
 
 
@@ -502,6 +501,8 @@ float: right;
                         font-family: 'Arial', sans-serif;
                         font-size: .8em;
                     }
+
+                        .itemMnuChild a:hover { text-decoration: underline; }
 
                     .fstColumn {
                         margin-left: 0;

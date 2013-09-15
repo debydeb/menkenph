@@ -40,7 +40,6 @@
     padding: 10px 2% 20px 2%;
     text-align: left;
     float: left;
-	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
 }	
  
 .flexbox .pg-grid > li {
@@ -120,27 +119,33 @@ padding-top:10px
         color: rgba(255, 100, 100, 1);
         padding: 100px;
     }
+    
     /* ---------------------------*\
         $GRID
     \* ---------------------------*/
 
     .pg-grid > li {
-        width: 10%;
-		margin: 1% 1%;
+        width: 25%;
+        min-height: 360px;
+
+        margin: 1% 0;
+        padding: 10px;
+
+		
     }
 	.main-container {
+        position: relative;
+
         width: 1024px;
         margin: 0 auto;
+        z-index: -3;
+
+        overflow: hidden;
     }
 
         .pg-container {
             width: 80%;
             float: right;
-        }
-
-        .pg-container li {
-            width: 25%;
-
         }
 
     /* ---------------------------*\
@@ -149,11 +154,13 @@ padding-top:10px
 
     .submenu-m {
         position: relative;
-        z-index: -2;
-        float: left;
+        z-index: -1;
         
         width: 20%;
-        margin-top: 10px;
+        margin: 50px 0;
+
+        float: left;
+        overflow: hidden;
     }
 
 }
