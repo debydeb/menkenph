@@ -14,14 +14,14 @@
         <link rel="stylesheet" href="<?php echo base_url() . 'css/pg-grid.css'; ?>" />
         <link rel="stylesheet" href="<?php echo base_url() . 'css/bootstrap.css'; ?>" />
         <link rel="stylesheet" href="<?php echo base_url() . 'css/main.css'; ?>" />
-
-        <!-- Include Sidr bundled CSS theme -->
-        <link rel="stylesheet" href="<?php echo base_url() . 'css/jquery.sidr.dark.css'; ?>"/>    
         
-        <link rel="icon" type="image/jpg" href="img/favicon.png" />
-
+        <link rel="icon" type="image/jpg" href="img/favicon.PNG" />
 
         <script src="<?php echo base_url(); ?>js/jquery-1.9.1.js"></script>
+        <?php if ( $this->agent->is_mobile() ) { ?>
         <script src="<?php echo base_url(); ?>js/sidr/jquery.sidr.min.js"></script>
+        <!-- Include Sidr bundled CSS theme -->
+        <link rel="stylesheet" href="<?php echo base_url() . 'css/jquery.sidr.dark.css'; ?>"/>  
+        <?php } ?>
 
     </head>
