@@ -1,19 +1,21 @@
 	<div class="main-container">
 			
 			<div class="submenu-m">
+				<h1>Categorías</h1>
 				<ul>
 					<?php if(isset($menu)) : foreach($menu as $row) :?>
-							<li><a href="<?php echo base_url() . 'product/0/' . $row->urlLink; ?>"><?php echo strtoupper($row->listName); ?></a></li>
+							<li><a href="<?php echo base_url() . 'product/0/' . $row->urlLink; ?>"><?php echo $row->listName; ?></a></li>
 						<?php endforeach; ?>
 					<?php endif; ?>
 				<ul>
 			</div>
 			
 			<!--Product Grid -- pg -->
-			<div id="pg-container" class="pg-container">
+			<div id="pg-container">
 				<ul class="pg-grid">
 					<?php if(isset($results)) : ?>
 						<?php if ( count($results) > 0 ) : ?>
+							<?php echo $this->pagination->create_links(); ?>
 							<?php foreach($results as $row) :?>
 								<li>
 									<div class="pg-content">
@@ -36,9 +38,9 @@
 								</li>
 							<?php endforeach;?>
 							
+							<?php echo $this->pagination->create_links(); ?>
 						</ul>
 						</div>
-							<?php echo $this->pagination->create_links(); ?>
 						<?php else : ?>
 							<h1 class="error">No se encontraron productos.</h1>
 						<?php endif; ?>
@@ -49,6 +51,3 @@
 			</div>
 			<!--END Product Grid -- pg -->
 	</div>
-
-</body>
-</html>

@@ -30,7 +30,7 @@ body {
     line-height: 1.4;
 
     position: relative;
-    z-index: -6;
+    background-color: rgba( 0, 0, 0, .1 );
 }
 
 hr {
@@ -93,23 +93,19 @@ body {
 	background-image: url('../img/bg_header_m.jpg');
 	background-repeat:repeat-x;
 }
-	
-	
-   h1{
-  	margin:5px 0 !important;
-	}
 
- .title a{
- 	color: white;
-	display: block;
-	text-indent:-9999px;
-	width:118px;
-	height:31px;
-	background: url("../img/logo_menken_pharma_m.png");
-	margin:0px;
+.title { margin: 0; padding: 0; }
+    .title a{
+     	color: white;
+    	display: block;
+    	text-indent:-9999px;
+    	width:118px;
+    	background: url("../img/logo_menken_pharma_m.png");
+    	margin:0px;
     }
 	
-	.title a:hover, .title a:focus {
+	.title a:hover,
+    .title a:focus {
         opacity: 0.7;
     }
    
@@ -189,21 +185,6 @@ top: 10px;
     padding: 0px 5% 10px;
 }
 
-.footer-container{
-    background-image: url('../img/bg_footer.jpg');
-	background-repeat:repeat-x;
-}
-
-.footer-container footer {
-    color: white;
-    padding: 5px 0;
-}
-
-.footer-container footer h3{
-		font-weight:400;
-		text-shadow: 1px 1px 3px #555657;
-        filter: dropshadow(color=#555657, offx=1, offy=1);
-}
 /* ===============
     ALL: IE Fixes
    =============== */
@@ -247,7 +228,8 @@ footer {
 
     border-bottom: 1px solid rgba(0, 0, 0, .5);
     box-shadow: 0 2px 10px rgba(0, 0, 0, .5);
-
+    
+    position: relative;
     height: 170px;
     width: 100%;
     bottom: 0;
@@ -570,6 +552,8 @@ footer {
     .container {
         /*box model*/
         width: 100%;
+
+        padding: 0;
     }
     
     /* ---------------------------*\
@@ -578,7 +562,13 @@ footer {
     .banner {       
         position: relative; 
         width: 100%;
+
+        box-shadow: 1px 1px 1px rgba( 0, 0, 0, .1 );
     }
+        .banner ul {
+            padding: 0;
+            margin: 0;
+        }
         .banner li { 
             list-style: none;
             height: 400px;
@@ -587,9 +577,10 @@ footer {
 
         .banner .info {
             /*Box Model*/
-            width: 1024px;
             margin: 5% auto;
-            padding: 20px 0 0 0;
+            padding-left: 50px;
+            width: 1024px;
+            
         }
 
             .banner .info h1 {

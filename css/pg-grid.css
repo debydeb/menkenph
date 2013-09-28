@@ -8,8 +8,7 @@
 .pg-container li {
     padding: 0;
     margin: 0;
-	margin-bottom: 10px;
-    list-style-type: none;
+    list-style: none;
 }
  
 .pg-grid {
@@ -33,22 +32,16 @@
 }
  
 .pg-grid > li {
-    display: inline-block;
-    vertical-align: top;
-    position: relative;
     width: 5%;
-    padding: 10px 2% 20px 2%;
+    list-style: none;
     text-align: left;
     float: left;
+
+    background: white;
 }	
  
 .flexbox .pg-grid > li {
     display: block;
-}
- 
- 
-.pg-content {
-    position: relative;
 }
  
 /* The item with the images will have perspective */
@@ -70,7 +63,10 @@
 
  
 .pg-info {
-    padding-top: 0px;
+    position: absolute;
+    bottom: 0;
+
+    padding-bottom: 20px;
 }
  
 .pg-info:before,
@@ -125,25 +121,26 @@ padding-top:10px
     \* ---------------------------*/
 
     .pg-grid > li {
-        width: 25%;
-        min-height: 360px;
+        position: relative;
+        
+        width: 22%;
+        min-height: 320px;
 
-        margin: 1% 0;
+        margin: 1% .5%;
         padding: 10px;
 
-		
+        /*Looking */
+        box-shadow: 1px 1px 10px rgba( 0, 0, 0, .1 );
     }
+
 	.main-container {
-        position: relative;
-
-        width: 1024px;
-        margin: 0 auto;
-        z-index: -3;
-
+        width: 100%;
         overflow: hidden;
+
+        margin: 5% 0;
     }
 
-        .pg-container {
+        #pg-container {
             width: 80%;
             float: right;
         }
@@ -152,17 +149,25 @@ padding-top:10px
         $SUBMENU
     \* ---------------------------*/
 
-    .submenu-m {
-        position: relative;
-        z-index: -1;
-        
+    .submenu-m {        
         width: 20%;
-        margin: 50px 0;
+        margin: 1% 0;
 
         float: left;
-        overflow: hidden;
+        
+        /*Apariencia texto*/
+        text-transform: capitalize;
     }
 
+    .submenu-m h1 {
+        font-size: 2em;
+        width: 200px;
+
+        margin-left: 40px;
+
+        border-bottom: 1px solid black;
+    }
+    
 }
  
 @media screen and (max-width: 30.125em) {

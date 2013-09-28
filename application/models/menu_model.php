@@ -9,10 +9,23 @@ class menu_model extends CI_Model {
 		$where .= isset( $sndParent ) ? "AND sndParent = '{$sndParent}'" : "";
 
 		//Performs the query and stores it in $query.
-		$this->db->from('mph_menulist')->where($where);
-		$query = $this->db->get();
+		$query = $this->queryMenu( $where );
+
+		//Si no hay resultados
+		if ( $query->num_rows() < 1 ) {
+			$where = "fstParent = '{$fstParent}'";
+
+			$query = $this->queryMenu( $where );
+		}
 
 		//returns the query results.
 		return $query->result();
+	}
+
+	function queryMenu ( $where ) {
+		$this->db->from('mph_menulist')->where($where);
+		$query = $this->db->get();
+
+		return $query;
 	}
 }
