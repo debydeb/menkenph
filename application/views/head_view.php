@@ -9,15 +9,17 @@
         <title>Menken Pharma - <?php echo $title; ?></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-
-        <link rel="stylesheet" href="<?php echo base_url() . 'css/normalize.min.css'; ?>" />
-        <link rel="stylesheet" href="<?php echo base_url() . 'css/pg-grid.css'; ?>" />
-        <link rel="stylesheet" href="<?php echo base_url() . 'css/bootstrap.css'; ?>" />
-        <link rel="stylesheet" href="<?php echo base_url() . 'css/main.css'; ?>" />
-        
+        <!--Favicon-->
         <link rel="icon" type="image/jpg" href="img/favicon.PNG" />
 
+        <link rel="stylesheet" href="<?php echo base_url() . 'css/components/normalize.min.css'; ?>" />
+        <link rel="stylesheet" href="<?php echo base_url() . 'css/components/bootstrap.css'; ?>" />
+        <link rel="stylesheet" href="<?php echo base_url() . 'css/pg-grid.css'; ?>" />
+        <link rel="stylesheet" href="<?php echo base_url() . 'css/main.css'; ?>" />
+        
+
         <script src="<?php echo base_url(); ?>js/jquery-1.9.1.js"></script>
+        
         <?php if ( $this->agent->is_mobile() ) { ?>
         <script src="<?php echo base_url(); ?>js/sidr/jquery.sidr.min.js"></script>
         <!-- Include Sidr bundled CSS theme -->
