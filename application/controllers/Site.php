@@ -128,6 +128,8 @@ class Site extends CI_Controller {
 		$this->load->view('footer_view', $data);
 	}
 
+
+
 	public function about() {
 		/*----------------
 			DATA ARRAY

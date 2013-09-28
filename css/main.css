@@ -480,7 +480,7 @@ footer {
         #subMenu {
             overflow: hidden;
             display: none;
-            
+
             /*box model*/
             width: 100%;
             padding: 0;
@@ -491,6 +491,8 @@ footer {
             /*color*/
             background: #323333;
         }
+
+        #subMenu * { color: white; }
 
             #mainList {
                 /*box model*/
@@ -509,6 +511,7 @@ footer {
                     border-bottom: 1px solid rgba( 0,0,0, .5 );
                     border-top: 1px solid rgba( 255,255,255, .1 );
                 }
+                #mainList .mnu-parentLi:hover { box-shadow: inset -2px 2px 5px rgba(0, 0, 0, .5); }
 
                 #mainList li {
                     text-align: center;                    
@@ -572,12 +575,13 @@ footer {
     /* ---------------------------*\
         $BANNER
     \* ---------------------------*/
-    .banner {        
+    .banner {       
+        position: relative; 
         width: 100%;
     }
         .banner li { 
             list-style: none;
-            height: 400px; 
+            height: 400px;
             float: left;
         }        
 
@@ -611,9 +615,9 @@ footer {
             }
         
         .banner .dots {
-            position: relative;
-            left: 50%;
+            position: absolute;
             bottom: 3%;
+            left: 50%;
             margin-left: -70px;
         }
             .banner .dots li {
