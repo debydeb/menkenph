@@ -38,10 +38,10 @@
 |
 */
 
-$route['default_controller'] = "welcome";
+$route['default_controller'] = "Index_controller";
 $route['404_override'] = '';
 
-$route['product/(:any)'] = "welcome/product/$1";
+$route['product/(:any)'] = "product/index/$1";
 $route['about'] = "welcome/about";
 $route['contact'] = "welcome/contact";
 
