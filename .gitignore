@@ -7,7 +7,7 @@
 *.png
 *.jpeg
 *.gif
-
+/Imagenes-productos
 
 
 # Ignorar database.php
