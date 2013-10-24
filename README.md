@@ -4,6 +4,16 @@
 Author: Franca Creative Studio
 
 
+
+
+
+Config.php
+----------
+
+La ruta especificada en '$config['base_url']' siempre debe tener el prefijo 'http://'
+
+
+
 Config database
 ---------------
 

@@ -5,7 +5,7 @@ class Home extends CI_Controller {
 	/*
 		Sets some stuff and loads the view
 	*/
-	public Index() {
+	public function Index() {
 		/*----------------
 			DATA ARRAY
 		------------------*/
