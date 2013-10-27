@@ -2,7 +2,7 @@
 
 class Products extends CI_Controller {
 	
-	public function Index() {
+	public function Index($start = 0, $par1 = null, $par2 = null, $par3 = null) {
 
 		
 		//Check if parameters are set.

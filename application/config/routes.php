@@ -41,7 +41,7 @@
 $route['default_controller'] = "Site";
 $route['404_override'] = '';
 
-//$route['product/(:any)'] = "product/index/$1";
+$route['product/(:any)'] = "products/index/$1";
 
 
 /* End of file routes.php */

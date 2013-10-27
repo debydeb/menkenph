@@ -34,3 +34,37 @@ Base de Datos (BD)
 ------------------
 
 La base de datos se encuentra en formato '.sql' en la carpeta BD
+
+
+
+
+Setear VirtualHost
+-------------------
+
+Para el correcto funcionamiento local de la aplicacion es necesario setear un host virtual dentro del servidor.
+
+En apache agregar en 'c:/wamp/bin/apache/apachex.x.x/conf/httpd.conf'
+
+```bash
+	## localhost
+	NameVirtualHost localhost
+
+	<VirtualHost localhost>
+	    DocumentRoot C:/wamp/www/
+	    ServerName localhost
+	</VirtualHost>
+
+	## menkenpharma
+	NameVirtualHost local.menken
+
+	<VirtualHost local.menken>
+	    DocumentRoot C:\Users\FACU\Dropbox\www\menkenpha
+	    ServerName local.menken
+	</VirtualHost>
+```
+
+Modificar 'C:/windows/system32/drivers/hosts' y agregar el host de menken pharma
+
+```bash
+	127.0.0.1 	local.menken
+```
