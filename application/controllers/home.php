@@ -3,8 +3,9 @@
 class Home extends CI_Controller {
 	
 	/*
-		Sets some stuff and loads the view
-	*/
+	 *	@Index:
+	 *		Sets some stuff and loads the view
+	 */
 	public function Index() {
 		/*----------------
 			DATA ARRAY

@@ -2,8 +2,14 @@
 
 class Products extends CI_Controller {
 	
-	public function Index($start = 0, $par1 = null, $par2 = null, $par3 = null) {
+	/*
+	 *	@Todo: 
+	 *		-Do the pagination in another function
+	 *		-Do submenu en another function
+	 *
+	 */
 
+	public function Index($start = 0, $par1 = null, $par2 = null, $par3 = null) {
 		
 		//Check if parameters are set.
 		if ($par1 == null && $par2 == null) {

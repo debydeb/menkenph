@@ -6,7 +6,7 @@ class Contact extends CI_Controller {
 		/*----------------
 			DATA ARRAY
 		------------------*/
-		$data['title'] = "About";
+		$data['title'] = "Contact";
 		//subMenu array
 		$subMenu = array( 	'imp'    => $this->menu_model->getMenu('impdent'), 
 							'prote'  => $this->menu_model->getMenu('prote', ''),

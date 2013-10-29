@@ -42,6 +42,8 @@ Setear VirtualHost
 -------------------
 
 Para el correcto funcionamiento local de la aplicacion es necesario setear un host virtual dentro del servidor.
+O modificar el archivo 'application/config/config.php' y setear el parametro
+'$config['base_url']	= 'localhost/ruta-del-sitio-local';'
 
 En apache agregar en 'c:/wamp/bin/apache/apachex.x.x/conf/httpd.conf'
 
