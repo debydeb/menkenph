@@ -5,36 +5,68 @@
 			<p>Cont&aacute;ctenos a trav&eacute;s de nuestro formulario, le responderemos a la brevedad. Adem&aacute;s por este medio tambi&eacute;n puede realizar el pedido de nuestros productos.
 				<br/>Le recomendamos proporcionar datos ver&iacute;dicos a fin de poder contactarnos con usted.</p>
 		</div>
-
 		<div id="contactForm">
-			<form role="form">
-				<div class="form-group">
-					<label for="name">Nombre</label>
-					<input type="text" id="name" class="form-control" name="name" placeholder="Nombre...">
-				</div>
+			<?php
+				$this->load->helper('form');
 				
-
-				<div class="form-group">
-					<label for="lstname">Apellido</label>
-					<input type="text" id="lstname" class="form-control" name="lstname" placeholder="Apellido...">
-				</div>
+				$attributes = array('role' => 'form', 'id' => 'myform');
+				echo form_open('contact/send', $attributes);
 				
-				<div class="form-group">
-					<label for="phone">Telefono</label>
-					<input type="text" id="phone" class="form-control" name="phone" placeholder="Teléfono...">
-				</div>
-
-				<div class="form-group">
-					<label for="email">E-mail</label>
-					<input type="text" id="phone" class="form-control" name="email" placeholder="E-mail...">
-				</div>
-				
-				<div class="form-group">
-					<label for="msj">Mensaje</label>
-					<textarea name="msj" id="msj" class="form-control" rows="5" placeholder="Escriba su mensaje..."></textarea>
-				</div>
-				<button type="submit" class="btn btn-primary">Enviar</button>
-			</form>
+					$data1 = array(
+									'type'        => 'text',
+									'name'        => 'name',
+									'id'          => 'name',
+									'placeholder' => 'Nombre...',
+									'class'       => 'form-control',
+                                                                        'value'       => ''
+								 );
+					$data2 = array(
+									'type'        => 'text',
+									'name'        => 'lstname',
+									'id'          => 'lstname',
+									'placeholder' => 'Apellido...',
+									'class'       => 'form-control',
+                                                                        'value'       => ''
+								 );								 
+					$data3 = array(
+									'type'        => 'text',
+									'name'        => 'phone',
+									'id'          => 'phone',
+									'placeholder' => 'Telefono...',
+									'class'       => 'form-control',
+                                                                        'value'       => ''
+								 );								 
+					$data4 = array(
+									'type'        => 'email',
+									'name'        => 'email',
+									'id'          => 'email',
+									'placeholder' => 'E-mail...',
+									'class'       => 'form-control',
+                                                                        'value'       => ''
+								 );								 
+					$data5 = array(
+									'name'        => 'msj',
+									'id'          => 'msj',
+									'placeholder' => 'Escriba su mensaje...',
+									'class'       => 'form-control',
+									'rows' 		  => '10',
+                                                                        'value'       => ''
+								);	
+					$data6 = array(
+									'name'        => 'Enviar',
+									'value'       => 'Enviar',
+									'class'       => 'btn btn-primary',
+								);				
+					echo '<div class="form-group"><label for="name">Nombre</label>'.form_input($data1).'</div>';
+					echo '<div class="form-group"><label for="lstname">Apellido</label>'.form_input($data2).'</div>';
+					echo '<div class="form-group"><label for="phone">Telefono</label>'.form_input($data3).'</div>';
+					echo '<div class="form-group"><label for="email">E-mail</label>'.form_input($data4).'</div>';
+					echo '<div class="form-group"><label for="msj">Mensaje</label>'.form_textarea($data5).'</div>';
+					
+					echo form_submit($data6);
+					
+				echo form_close();	
+			?>
 		</div>
 	</div>
 </div>

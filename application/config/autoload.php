@@ -64,7 +64,7 @@ $autoload['libraries'] = array('database', 'pagination', 'user_agent');
 |	$autoload['helper'] = array('url', 'file');
 */
 
-$autoload['helper'] = array('url');
+$autoload['helper'] = array('url','MY_ip_helper');
 
 
 /*
