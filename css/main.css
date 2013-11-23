@@ -695,7 +695,7 @@ footer {
 
     #contact {
         width: 1024px;
-        margin: 50px auto;
+        margin: 30px auto;
         min-height: 700px;
     }
 
@@ -707,9 +707,17 @@ footer {
         #contactInfo {
             width: 50%;
             float: left;
+            padding: 0;
         }
 
-            #contactInfo p { width: 90%; }
+        #contactInfo h1 {
+            margin: 0;
+            margin-bottom: 20px;            
+        }
+
+            #contactInfo p {
+                width: 90%;
+            }
 
 
 

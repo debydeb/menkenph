@@ -2,6 +2,13 @@
 
 class products_model extends CI_Model {
 
+	/*
+	 *
+	 * @getRecordsCount: 
+	 *	This function returns the number of records defined in the query string 
+	 *	
+	 *
+	 */
 	function getRecordsCount($par1, $par2, $par3) {
 		$where = "lvlOne = '{$par1}'";
 		$where .= isset( $par2 ) ? "AND lvlTwo = '{$par2}'" : "";
@@ -13,6 +20,13 @@ class products_model extends CI_Model {
 		return $query->num_rows();
 	}
 
+
+	/*
+	 *
+	 * @getAllRecords:
+	 *	This function returns all the records of the database with a limit of 12.
+	 *
+	 */
 	function getAllRecords() {
 		$this->db->from('mph_products')->limit(12, 0);
 		$query = $this->db->get();
@@ -20,7 +34,13 @@ class products_model extends CI_Model {
 		return $query->result();
 	}
 
-	function getRecords($perPage = 12 ,$start = 0, $param1, $param2, $param3) {
+	/*
+	 *
+	 * @getAllRecords:
+	 *	 This function returns all the records of the database with a limit of 12.
+	 *
+	 */
+	function getRecords($perPage = 12, $start = 0, $param1, $param2, $param3) {
 
 		//Concatenación y syntaxis ternary
 		$where = "lvlOne = '{$param1}'";
@@ -31,6 +51,20 @@ class products_model extends CI_Model {
 		$query = $this->db->get();
 
 		return $query->result();
+	}
+
+	/*
+	 * @doQuery:
+	 *	Do the query with the query
+	 *		
+	 *	@param $queryString: Query string passed from another function
+	 *
+	 */
+	function doQuery($queryString){
+		/*
+		 *Todo: Recator model
+		 *
+		 */
 	}
 	
 }

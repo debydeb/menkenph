@@ -1,0 +1,26 @@
+# IGNORAR TODOS LOS ARCHIVOS DE IMAGENES
+# --------------------------------------
+# Es mejor para la performance de pusheos 
+# y pulleos del repositorio remoto
+
+*.jpg
+*.png
+*.jpeg
+*.gif
+
+
+# Ignorar database.php
+# -------------------
+database.php
+
+
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
