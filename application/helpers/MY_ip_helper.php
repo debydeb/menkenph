@@ -27,7 +27,7 @@ function get_ip(){
 
 	if($country_name == 'Argentina')
 		{
-			//
+			
 			 echo "<script>alert('arg');</script>";
 		}else{
 				echo "<script>alert('world');</script>";
