@@ -15,7 +15,6 @@
 |
 */
 $config['base_url']	= 'http://local.menken';
-//$config['base_url'] = 'http://www.menkenpharma.com.ar';
 
 /*
 |--------------------------------------------------------------------------

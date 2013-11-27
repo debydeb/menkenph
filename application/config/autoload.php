@@ -52,7 +52,7 @@ $autoload['packages'] = array();
 |	$autoload['libraries'] = array('database', 'session', 'xmlrpc');
 */
 
-$autoload['libraries'] = array('database', 'pagination', 'user_agent', 'geoip');
+$autoload['libraries'] = array('database', 'pagination', 'user_agent','geoip');
 
 
 /*
@@ -64,7 +64,7 @@ $autoload['libraries'] = array('database', 'pagination', 'user_agent', 'geoip');
 |	$autoload['helper'] = array('url', 'file');
 */
 
-$autoload['helper'] = array('url', 'ip_helper');
+$autoload['helper'] = array('url','MY_ip_helper');
 
 
 /*
