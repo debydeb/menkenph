@@ -16,14 +16,28 @@
         <link rel="stylesheet" href="<?php echo base_url() . 'css/components/bootstrap.css'; ?>" />
         <link rel="stylesheet" href="<?php echo base_url() . 'css/pg-grid.css'; ?>" />
         <link rel="stylesheet" href="<?php echo base_url() . 'css/main.css'; ?>" />
-        
+
 
         <script src="<?php echo base_url(); ?>js/jquery-1.9.1.js"></script>
-        
+
+        <!--Google Analytics -->
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-44440105-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        </script>
+
+
         <?php if ( $this->agent->is_mobile() ) { ?>
         <script src="<?php echo base_url(); ?>js/sidr/jquery.sidr.min.js"></script>
         <!-- Include Sidr bundled CSS theme -->
-        <link rel="stylesheet" href="<?php echo base_url() . 'css/jquery.sidr.dark.css'; ?>"/>  
+        <link rel="stylesheet" href="<?php echo base_url() . 'css/jquery.sidr.dark.css'; ?>"/>
         <?php } ?>
 
     </head>

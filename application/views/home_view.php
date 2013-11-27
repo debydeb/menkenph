@@ -11,7 +11,7 @@
 
 				<li style="background-image: url('<?php echo base_url(); ?>img/slider/slide2.jpg');">
 					<div class="info">
-						<h1>Mango de bistur&iacute;</h1>
+						<h1>Mango de bisturi</h1>
 						<p><strong>Detalle: </strong> Mango de bistur&iacute; redondo y angulado</p>
 						<p><strong>Marca: </strong> FICO &amp; Br&uuml;cke</p>
 					</div>

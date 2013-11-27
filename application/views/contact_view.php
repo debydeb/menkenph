@@ -5,7 +5,6 @@
 			<p>Cont&aacute;ctenos a trav&eacute;s de nuestro formulario, le responderemos a la brevedad. Adem&aacute;s por este medio tambi&eacute;n puede realizar el pedido de nuestros productos.
 				<br/>Le recomendamos proporcionar datos ver&iacute;dicos a fin de poder contactarnos con usted.</p>
 		</div>
-
 		<div id="contactForm">
 			<?php
 				$this->load->helper('form');

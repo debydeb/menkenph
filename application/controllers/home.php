@@ -1,7 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script acces allowed');
 
 class Home extends CI_Controller {
-	
+
 	/*
 	 *	@Index:
 	 *		Sets some stuff and loads the view
@@ -12,7 +12,7 @@ class Home extends CI_Controller {
 		------------------*/
 		$data['title'] = "Home";
 		//subMenu array
-		$subMenu = array( 	'imp'    => $this->menu_model->getMenu('impdent', ''), 
+		$subMenu = array( 	'imp'    => $this->menu_model->getMenu('impdent', ''),
 							'prote'  => $this->menu_model->getMenu('prote', ''),
 							'biomat' => $this->menu_model->getMenu('biomat', ''),
 							'cirug'  => $this->menu_model->getMenu('cirug', ''),
@@ -37,5 +37,5 @@ class Home extends CI_Controller {
 		$this->load->view('footer_view', $data);
 	}
 
-	
+
 }

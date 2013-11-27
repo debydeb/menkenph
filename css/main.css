@@ -1,6 +1,7 @@
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
+   /*
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
 
 @font-face {
@@ -16,7 +17,7 @@
     font-weight: bold;
     font-style: normal;
 }
-
+*/
 html,
 button,
 input,
@@ -28,7 +29,7 @@ textarea {
 body {
     font-size: 20px;
     line-height: 1.4;
-
+	font-family:Helvetica, Arial,sans-serif;
     position: relative;
     background-color: rgba( 0, 0, 0, .1 );
 }
@@ -101,7 +102,7 @@ body {
     	text-indent:-9999px;
     	width:118px;
     	background: url("../img/logo_menken_pharma_m.png");
-    	margin:0px;
+    	margin:5px 0px 0px;
     }
 	
 	.title a:hover,
@@ -230,7 +231,7 @@ footer {
     box-shadow: 0 2px 10px rgba(0, 0, 0, .5);
     
     position: relative;
-    height: 170px;
+    height: 273px;
     width: 100%;
     bottom: 0;
 }
@@ -240,24 +241,37 @@ footer {
         margin: 0 auto;
         padding: 0;
     }
+.footertitle{
+	font-weight:bold;
+	font-size:22px;
+	color:rgb(50,50,50);
 
-        #footerContent address {
+	}
+    #footerContent address {
             float: left;
-            padding: 20px 12% 20px;
-            border-right: 1px solid rgba(0, 0, 0, .2);
+            padding: 20px 12% 5px;
             height: 100%;
-            margin: 0;
+            line-height:25px;
+			color:#fff;
         }
     
+			.bt{
+				width:35px;
+				height:35px;
+				margin:0px 5px;
+				}	
+
         #footerContent ul {
             float: left;
-            padding: 20px 10% 20px 5%;
-            
+            padding: 20px 5% 5px 5%;
+            list-style:none;
             height: 100%;
-            border-right: 1px solid rgba(0, 0, 0, .2);
+           
             margin: 0;
         }
-
+		#footerContent ul li a{
+			color:#fff;
+		}
         #footerContent ul li a:hover {
             text-decoration: underline;
         }
@@ -265,10 +279,45 @@ footer {
         #footerContent div {
             float: left;
             margin: 0;
-            padding: 20px 5% 20px 5%;
+            padding: 20px 5% 5px 5%;
         }
+		#map{
+		background:url('../img/bt_map.png') no-repeat;
+		}
+		#face2{
+		background:url('../img/bt_fb_m2.png') no-repeat;
+		}
+		#mail2{
+		background:url('../img/bt_mail2.png') no-repeat;
+		}	
+		#map, #face2, #mail2{
+		width:45px;
+		height:45px;
+		background-size:88%;
+		}
+		
 
+	
+	#franca{
+		float: left;
+		width:100%;
+		height:50px;
+		line-height:50px;
+		text-align:right;
+		color:#ccc;
+		padding-right:16%;
+		background:#143a66;/*143a66   2c6b9e*/
 
+	}
+	#francai{
+		position:absolute;
+		right:5%;
+		bottom:5px;
+		height:35px;
+		width:100px;
+		background:url('../img/franca.png')no-repeat;
+		background-size:100%;
+	}
 
 
 
@@ -555,18 +604,18 @@ footer {
 
         padding: 0;
     }
-    
+   
     /* ---------------------------*\
         $BANNER
     \* ---------------------------*/
     .banner {       
         position: relative; 
         width: 100%;
-
         box-shadow: 1px 1px 1px rgba( 0, 0, 0, .1 );
+		margin-top:-5%;
     }
         .banner ul {
-            padding: 0;
+            padding: 0 0;
             margin: 0;
         }
         .banner li { 
@@ -577,14 +626,14 @@ footer {
 
         .banner .info {
             /*Box Model*/
-            margin: 5% auto;
+            margin: 5%;
             padding-left: 50px;
             width: 1024px;
             
         }
 
             .banner .info h1 {
-                font-family: 'Kautiva', sans-serif;
+               /* font-family: 'Kautiva', sans-serif;*/
                 font-weight: bold;
                 font-size: 2.5em;
                 color: #6BC1E7;
@@ -642,32 +691,49 @@ footer {
         /*box model*/
         width: 1024px;
         overflow: hidden;
-        margin: 80px auto;
+        margin: 0px auto;
+		
     }
 
         .content-grid {
             width: 29%;
-            height: 400px;
+            height: 230px;
             margin: 0 2%;
             float: left;
-
             text-align: center;
         }
 
             .content-grid h1 {
-                height: 80px;
+                height: 55px;
                 text-transform: uppercase;
-                
-                font-family: 'Kautiva', sans-serif;
+                margin-bottom:0px;
+               /* font-family: 'Kautiva', sans-serif;*/
                 font-weight: normal;
-                font-size: 1.8em;
+                font-size: 1.5em;
                 color: #143A66;
             }
 
             .content-grid p {
                 color: grey;
+				margin:0;
             }
 
+	@media only screen and (min-width:1024px){
+		#content{
+			width:100%;
+			overflow:hidden;
+			margin: 80px auto;
+		}
+	 .container{
+		width:100%;
+		padding:5% 0;
+		height:100%;
+		}
+	}		
+	
+ 
+			
+			
     /* ---------------------------*\
         $PRODUCTS
     \* ---------------------------*/
@@ -695,7 +761,7 @@ footer {
 
     #contact {
         width: 1024px;
-        margin: 30px auto;
+        margin: 50px auto;
         min-height: 700px;
     }
 
@@ -707,17 +773,9 @@ footer {
         #contactInfo {
             width: 50%;
             float: left;
-            padding: 0;
         }
 
-        #contactInfo h1 {
-            margin: 0;
-            margin-bottom: 20px;            
-        }
-
-            #contactInfo p {
-                width: 90%;
-            }
+            #contactInfo p { width: 90%; }
 
 
 
