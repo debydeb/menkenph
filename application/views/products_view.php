@@ -17,7 +17,7 @@
 						<?php if ( count($results) > 0 ) : ?>
 							<?php echo $this->pagination->create_links(); ?>
 							<?php foreach($results as $row) :?>
-								<li>
+								<li class="prod-single" id="<?php echo $row->ID?>">
 									<div class="pg-content">
 										<div class="pg-item">
 											<div class="pg-image">
