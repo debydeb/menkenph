@@ -1,5 +1,5 @@
 	<div class="main-container">
-			
+
 			<div class="submenu-m">
 				<h1>Categorías</h1>
 				<ul>
@@ -9,7 +9,7 @@
 					<?php endif; ?>
 				<ul>
 			</div>
-			
+
 			<!--Product Grid -- pg -->
 			<div id="pg-container">
 				<ul class="pg-grid">
@@ -29,7 +29,7 @@
 											</div>
 										</div>
 									</div>
-										
+
 									<div class="pg-info">
 										<h3><?php echo $row->name; ?></h3>
 										<p class="pg-details"><strong>Detalle: </strong><?php  echo $row->detail; ?></p>
@@ -37,7 +37,7 @@
 									</div>
 								</li>
 							<?php endforeach;?>
-							
+
 							<?php echo $this->pagination->create_links(); ?>
 						</ul>
 						</div>

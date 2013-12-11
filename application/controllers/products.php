@@ -1,16 +1,16 @@
 <?php
 
 class Products extends CI_Controller {
-	
+
 	/*
-	 *	@Todo: 
+	 *	@Todo:
 	 *		-Do the pagination in another function
 	 *		-Do submenu en another function
 	 *
 	 */
 
 	public function Index($start = 0, $par1 = null, $par2 = null, $par3 = null) {
-		
+
 		//Check if parameters are set.
 		if ($par1 == null && $par2 == null) {
 			echo "Parameters error.";
@@ -35,28 +35,28 @@ class Products extends CI_Controller {
 		$config['constant_num_links'] = TRUE;
 		$config['full_tag_open'] = '<ul class="pagination">';
 		$config['full_tag_close'] = "</ul>";
-		
+
 		$config['first_tag_open'] = '<li>';
 		$config['first_tag_close'] = "</li>";
-		
+
 		$config['last_tag_open'] = '<li>';
 		$config['last_tag_close'] = "</li>";
-		
+
 		$config['next_tag_open'] = '<li>';
 		$config['next_tag_close'] = '</li>';
-		
+
 		$config['prev_tag_open'] = '<li>';
 		$config['prev_tag_close'] = '</li>';
-		
+
 		$config['num_tag_open'] = '<li>';
 		$config['num_tag_close'] = '</li>';
-		
+
 		$config['cur_tag_open'] = '<li><a href="#">';
 		$config['cur_tag_close'] = '</a></li>';
 
 		//Init pagiantion library
 		$this->pagination->initialize($config);
-		
+
 
 		/*----------------
 			DATA ARRAY
@@ -68,7 +68,7 @@ class Products extends CI_Controller {
 		//Get the submenu
 		$data['menu'] = $this->menu_model->getMenu($this->uri->segment(3), $this->uri->segment(4));
 
-		$subMenu = array( 	'imp'    => $this->menu_model->getMenu('impdent'), 
+		$subMenu = array( 	'imp'    => $this->menu_model->getMenu('impdent'),
 							'prote'  => $this->menu_model->getMenu('prote', ''),
 							'biomat' => $this->menu_model->getMenu('biomat', ''),
 							'cirug'  => $this->menu_model->getMenu('cirug', ''),
@@ -76,12 +76,12 @@ class Products extends CI_Controller {
 							'equip'  => $this->menu_model->getMenu('equip')
 						);
 
-		
+
 		/*----------------
 			LOAD VIEWS
 		------------------*/
 		$this->load->view('head_view', $data);
-		
+
 		//Mobile detection
 		if ($this->agent->is_mobile()) :
 			$this->load->view('header_view', $data);

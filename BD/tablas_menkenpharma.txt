@@ -1,0 +1,29 @@
+
+CREATE TABLE `productos` ( 
+    `prod_id` int(3) NOT NULL AUTO_INCREMENT, 
+    `prod_name` varchar(50) NOT NULL DEFAULT '', 
+	`cat_id` int(3), 
+    `brand_id` int(3), 
+	`detail_id` int(3), 
+    PRIMARY KEY (`prod_id`) 
+)
+
+CREATE TABLE `marcas` ( 
+    `brand_id` int(3) NOT NULL AUTO_INCREMENT, 
+    `brand_name` varchar(50) NOT NULL DEFAULT '', 
+    PRIMARY KEY (`brand_id`) 
+)
+
+CREATE TABLE `categorias` ( 
+    `cat_id` int(3) NOT NULL AUTO_INCREMENT, 
+    `cat_name` varchar(50) NOT NULL DEFAULT '', 
+	`parent_cat_id` int(3), 
+    PRIMARY KEY (`cat_id`) 
+)
+
+CREATE TABLE `detalles` ( 
+    `detail_id` int(3) NOT NULL AUTO_INCREMENT, 
+    `detail` varchar(250) NOT NULL DEFAULT '', 
+	`prod_id` int(3), 
+    PRIMARY KEY (`detail_id`) 
+)
