@@ -48,7 +48,7 @@ class Contact extends CI_Controller {
 			/**
 			 * CAMBIAR EL EMAIL!!
 			 */
-			$this->email->to('debora.ovando@gmail.com');
+			$this->email->to('menko@menken.com.ar');
 			$this->email->subject('Contacto desde Menken Pharma Site');
 
 			$name = $this->input->post('name');
