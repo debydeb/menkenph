@@ -1,0 +1,98 @@
+footer {
+    background-image: none;
+    background: linear-gradient(#31699C 50%, #2E5491);
+    background: linear-gradient(#31699C 50%, #2E5491);
+    background: linear-gradient(#31699C 50%, #2E5491);
+    background: linear-gradient(#31699C 50%, #2E5491);
+
+    border-bottom: 1px solid rgba(0, 0, 0, .5);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .5);
+    
+    position: relative;
+    height: 273px;
+    width: 100%;
+    bottom: 0;
+}
+
+    footer #footerContent {
+        width: 1024px;
+        margin: 0 auto;
+        padding: 0;
+    }
+.footertitle{
+	font-weight:bold;
+	font-size:22px;
+	color:rgb(50,50,50);
+
+	}
+    #footerContent address {
+            float: left;
+            padding: 20px 12% 5px;
+            height: 100%;
+            line-height:25px;
+			color:#fff;
+        }
+    
+			.bt{
+				width:35px;
+				height:35px;
+				margin:0px 5px;
+				}	
+
+        #footerContent ul {
+            float: left;
+            padding: 20px 5% 5px 5%;
+            list-style:none;
+            height: 100%;
+           
+            margin: 0;
+        }
+		#footerContent ul li a{
+			color:#fff;
+		}
+        #footerContent ul li a:hover {
+            text-decoration: underline;
+        }
+
+        #footerContent div {
+            float: left;
+            margin: 0;
+            padding: 20px 5% 5px 5%;
+        }
+		#map{
+		background:url('../img/bt_map.png') no-repeat;
+		}
+		#face2{
+		background:url('../img/bt_fb_m2.png') no-repeat;
+		}
+		#mail2{
+		background:url('../img/bt_mail2.png') no-repeat;
+		}	
+		#map, #face2, #mail2{
+		width:45px;
+		height:45px;
+		background-size:88%;
+		}
+		
+
+	
+	#franca{
+		float: left;
+		width:100%;
+		height:50px;
+		line-height:50px;
+		text-align:right;
+		color:#ccc;
+		padding-right:16%;
+		background:#143a66;/*143a66   2c6b9e*/
+
+	}
+	#francai{
+		position:absolute;
+		right:5%;
+		bottom:5px;
+		height:35px;
+		width:100px;
+		background:url('../img/franca.png')no-repeat;
+		background-size:100%;
+	}

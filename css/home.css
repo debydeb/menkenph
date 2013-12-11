@@ -1,0 +1,26 @@
+
+@media only screen and (min-width: 860px) {
+
+        .content-grid {
+            width: 29%;
+            height: 230px;
+            margin: 0 2%;
+            float: left;
+            text-align: center;
+        }
+
+            .content-grid h1 {
+                height: 55px;
+                text-transform: uppercase;
+                margin-bottom:0px;
+               /* font-family: 'Kautiva', sans-serif;*/
+                font-weight: normal;
+                font-size: 1.5em;
+                color: #143A66;
+            }
+
+            .content-grid p {
+                color: grey;
+				margin:0;
+            }
+}

@@ -1,0 +1,353 @@
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+.header-container,
+.main aside {
+	background-image: url('../img/bg_header_m.jpg');
+	background-repeat:repeat-x;
+}
+
+.title { margin: 0; padding: 0; }
+    .title a{
+     	color: white;
+    	display: block;
+    	text-indent:-9999px;
+    	width:118px;
+    	background: url("../img/logo_menken_pharma_m.png");
+    	margin:5px 0px 0px;
+    }
+	
+	.title a:hover,
+    .title a:focus {
+        opacity: 0.7;
+    }
+   
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    color: white;
+}
+
+nav a:hover,
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+a#simple-menu {
+content: "";
+text-indent: -9999px;
+background: url('../img/nav-icon.png') no-repeat;
+width: 27px;
+height: 27px;
+display: inline-block;
+position: absolute;
+right: 15px;
+top: 7px;
+}
+
+.bt_fb { 
+    background: url('../img/bt_fb_m.png') no-repeat; 
+    content: "";
+    display: inline-block;
+
+    width: 19px;
+    height: 19px;
+    }
+
+a#bt_fb {
+content: "";
+text-indent: -9999px;
+width: 19px;
+background: url('../img/bt_fb_m.png') no-repeat; 
+height: 19px;
+display: inline-block;
+position: absolute;
+right: 55px;
+top: 10px;
+}
+
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.submenu-m ul{
+    margin:0;
+    list-style: none;
+}
+    .submenu-m li {
+        margin: 10px;
+    }
+        .submenu-m li a{
+            font-size:12px;
+            text-decoration: none;
+            font-size: 1em;
+
+            padding: 3px 0;
+            color: rgba(0, 0, 0, .7);
+        }
+            .submenu-m li a:hover{
+                text-decoration: underline;
+            }
+            .submenu-m li#active{
+                background: rgb(158,190,225);
+            }
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+    nav a {
+        float: left;
+        width: 27%;
+        margin: 0 1.7%;
+        padding: 25px 2%;
+        margin-bottom: 0;
+    }
+
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+    
+/* ============
+    WIDE: Menu
+   ============ */
+
+    .title {
+        float: left;
+    }
+
+    nav {
+        float: right;
+        width: 38%;
+    }
+	
+}
+
+@media only screen and (min-width: 860px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .header-container {
+        background-image: none;
+        background: linear-gradient(#31699C 50%, #2E5491);
+        background: linear-gradient(#31699C 50%, #2E5491);
+        background: linear-gradient(#31699C 50%, #2E5491);
+        background: linear-gradient(#31699C 50%, #2E5491);
+
+        border-bottom: 1px solid rgba(0, 0, 0, .5);
+
+        z-index: 333;
+    }
+
+        .title {
+            float: left;
+        }
+        .title a {
+            background-image: url('../img/big_logo_mknph.PNG');
+            background-repeat: no-repeat;
+
+            height: 60px;
+            width: 233px;
+
+            margin-left: 5%;
+        }
+
+    /* ---------------------------*\
+        $MENU
+    \* ---------------------------*/    
+        a#bt_fb_desktop {
+            content: "";
+            text-indent: -9999px;
+            background: url('../img/bt_fb_m.png') no-repeat; 
+            width: 19px;
+            height: 19px;
+
+            margin: 25px 50px 0 0;
+            
+
+            float: right;
+        }
+
+        #desktop_menu { 
+            overflow: hidden;
+            float: left;
+            
+            /*box model*/
+            width: 450px;
+            height: 70px;
+            margin: 0;
+            padding: 0;
+        }
+            #desktop_menu a {
+                color: white;
+            }
+
+            #desktop_menu a {
+                color: white;
+                list-style: none;
+                padding: 0;
+                
+                /*font & text*/
+                text-decoration: none;
+                font-family: 'Montserrat', sans-serif;
+            }
+            #desktop_menu .first {
+                float: left;
+
+                padding: 22px 20px;
+
+                list-style: none;
+
+                border-left: 1px solid #143A66;
+            }
+
+            #desktop_menu
+            .first:hover a {
+                color: white;
+            }
+
+    /* ---------------------------*\
+      $SUBMENU
+    \* ---------------------------*/
+
+        #subMenu {
+            overflow: hidden;
+            display: none;
+
+            /*box model*/
+            width: 100%;
+            padding: 0;
+            
+            /*text*/
+            text-transform: uppercase;
+            
+            /*color*/
+            background: #323333;
+        }
+
+        #subMenu * { color: white; }
+
+            #mainList {
+                /*box model*/
+                width: 17%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+
+                /*color*/
+                background: #212222;
+
+                box-shadow: inset -2px 2px 5px rgba(0, 0, 0, .2);
+            }
+
+                #mainList .mnu-parentLi {
+                    border-bottom: 1px solid rgba( 0,0,0, .5 );
+                    border-top: 1px solid rgba( 255,255,255, .1 );
+                }
+                #mainList .mnu-parentLi:hover { box-shadow: inset -2px 2px 5px rgba(0, 0, 0, .5); }
+
+                #mainList li {
+                    text-align: center;                    
+                }
+
+                #mainList a{
+                    display: block;
+                    padding: 10px;
+                }
+
+                #mainList li:hover > ul {
+                    display: block;
+                }
+
+                    .itemMnuChild {
+                        display: none;
+                        list-style: none;
+
+                        /*box model*/
+                        position: absolute;
+                        top: 4.9%;
+                        left: 16%;
+                        width: 760px;
+                        height: 100%;
+                        
+                        margin: 0;
+                        
+                        /*font*/
+                        font-family: 'Arial', sans-serif;
+                        font-size: .8em;
+                    }
+
+                        .itemMnuChild a:hover { text-decoration: underline; }
+
+                    .fstColumn {
+                        width: 40%;
+                        margin-left: 0;
+                    }
+
+                    .fstColumn a,
+                    .sndColumn a {
+                        text-align: left;
+                    }
+
+                    .sndColumn {
+                        margin-left: 290px;
+                    }
+
+                    .firstSndColumn {
+                        margin-top: -230px;
+                    }
+    
+  }
+

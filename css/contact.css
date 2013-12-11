@@ -1,0 +1,39 @@
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width:1024px){
+		
+  
+    #contact {
+        width: 1024px;
+        margin: 50px auto;
+        min-height: 700px;
+    }
+
+        #contactForm {
+            width: 50%;
+            float: right;
+        }
+        
+        #contactInfo {
+            width: 50%;
+            float: left;
+        }
+
+            #contactInfo p { width: 90%; }
+
+
+
+}
