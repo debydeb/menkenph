@@ -21,7 +21,8 @@ class products_model extends CI_Model {
 	 */
 	function getRecordsCount($par1, $par2, $par3) {
 		$query = $this->_buildQuery($par1, $par2, $par3);
-		$result = $this->_doQuery($query, 0);
+		$this->db->from('mph_products')->where($query);
+		$result = $this->db->get();
 
 		return $result->num_rows();
 

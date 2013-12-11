@@ -85,6 +85,9 @@ body {
     color: white;
 }
 
+.formError {
+    color: rgba(255, 70, 0, 1);
+}
 /* ==============
     MOBILE: Menu
    ============== */
@@ -104,12 +107,12 @@ body {
     	background: url("../img/logo_menken_pharma_m.png");
     	margin:5px 0px 0px;
     }
-	
+
 	.title a:hover,
     .title a:focus {
         opacity: 0.7;
     }
-   
+
 nav ul {
     margin: 0;
     padding: 0;
@@ -148,8 +151,8 @@ right: 15px;
 top: 7px;
 }
 
-.bt_fb { 
-    background: url('../img/bt_fb_m.png') no-repeat; 
+.bt_fb {
+    background: url('../img/bt_fb_m.png') no-repeat;
     content: "";
     display: inline-block;
 
@@ -161,7 +164,7 @@ a#bt_fb {
 content: "";
 text-indent: -9999px;
 width: 19px;
-background: url('../img/bt_fb_m.png') no-repeat; 
+background: url('../img/bt_fb_m.png') no-repeat;
 height: 19px;
 display: inline-block;
 position: absolute;
@@ -229,7 +232,7 @@ footer {
 
     border-bottom: 1px solid rgba(0, 0, 0, .5);
     box-shadow: 0 2px 10px rgba(0, 0, 0, .5);
-    
+
     position: relative;
     height: 273px;
     width: 100%;
@@ -254,19 +257,19 @@ footer {
             line-height:25px;
 			color:#fff;
         }
-    
+
 			.bt{
 				width:35px;
 				height:35px;
 				margin:0px 5px;
-				}	
+				}
 
         #footerContent ul {
             float: left;
             padding: 20px 5% 5px 5%;
             list-style:none;
             height: 100%;
-           
+
             margin: 0;
         }
 		#footerContent ul li a{
@@ -289,15 +292,15 @@ footer {
 		}
 		#mail2{
 		background:url('../img/bt_mail2.png') no-repeat;
-		}	
+		}
 		#map, #face2, #mail2{
 		width:45px;
 		height:45px;
 		background-size:88%;
 		}
-		
 
-	
+
+
 	#franca{
 		float: left;
 		width:100%;
@@ -366,7 +369,7 @@ footer {
     WIDE: CSS3 Effects
    ==================== */
 
-    
+
 /* ============
     WIDE: Menu
    ============ */
@@ -420,7 +423,7 @@ footer {
         width: 100%; /* 1140px - 10% for margins */
         margin: 0 auto;
     }
-    
+
     /* ---------------------------*\
         $HEADER
     \* ---------------------------*/
@@ -452,24 +455,24 @@ footer {
 
     /* ---------------------------*\
         $MENU
-    \* ---------------------------*/    
+    \* ---------------------------*/
         a#bt_fb_desktop {
             content: "";
             text-indent: -9999px;
-            background: url('../img/bt_fb_m.png') no-repeat; 
+            background: url('../img/bt_fb_m.png') no-repeat;
             width: 19px;
             height: 19px;
 
             margin: 25px 50px 0 0;
-            
+
 
             float: right;
         }
 
-        #desktop_menu { 
+        #desktop_menu {
             overflow: hidden;
             float: left;
-            
+
             /*box model*/
             width: 450px;
             height: 70px;
@@ -484,7 +487,7 @@ footer {
                 color: white;
                 list-style: none;
                 padding: 0;
-                
+
                 /*font & text*/
                 text-decoration: none;
                 font-family: 'Montserrat', sans-serif;
@@ -515,10 +518,10 @@ footer {
             /*box model*/
             width: 100%;
             padding: 0;
-            
+
             /*text*/
             text-transform: uppercase;
-            
+
             /*color*/
             background: #323333;
         }
@@ -545,7 +548,7 @@ footer {
                 #mainList .mnu-parentLi:hover { box-shadow: inset -2px 2px 5px rgba(0, 0, 0, .5); }
 
                 #mainList li {
-                    text-align: center;                    
+                    text-align: center;
                 }
 
                 #mainList a{
@@ -567,9 +570,9 @@ footer {
                         left: 16%;
                         width: 760px;
                         height: 100%;
-                        
+
                         margin: 0;
-                        
+
                         /*font*/
                         font-family: 'Arial', sans-serif;
                         font-size: .8em;
@@ -594,7 +597,7 @@ footer {
                     .firstSndColumn {
                         margin-top: -230px;
                     }
-    
+
     /* ---------------------------*\
         $CONTAINER
     \* ---------------------------*/
@@ -604,12 +607,12 @@ footer {
 
         padding: 0;
     }
-   
+
     /* ---------------------------*\
         $BANNER
     \* ---------------------------*/
-    .banner {       
-        position: relative; 
+    .banner {
+        position: relative;
         width: 100%;
         box-shadow: 1px 1px 1px rgba( 0, 0, 0, .1 );
 		margin-top:-5%;
@@ -618,18 +621,18 @@ footer {
             padding: 0 0;
             margin: 0;
         }
-        .banner li { 
+        .banner li {
             list-style: none;
             height: 400px;
             float: left;
-        }        
+        }
 
         .banner .info {
             /*Box Model*/
             margin: 5%;
             padding-left: 50px;
             width: 1024px;
-            
+
         }
 
             .banner .info h1 {
@@ -646,14 +649,14 @@ footer {
                 font-size: .8em;
                 color: grey;
                 line-height: 1.5em;
-                
+
                 width: 200px;
                 padding: 0;
                 margin: 0;
 
                 border-bottom: 1px solid grey;
             }
-        
+
         .banner .dots {
             position: absolute;
             bottom: 3%;
@@ -665,15 +668,15 @@ footer {
                 width: 10px;
                 height: 10px;
                 margin: 0 4px;
-                
+
                 text-indent: -999em;
-                
+
                 border: 2px solid rgba(0, 0, 0, .7);
                 border-radius: 6px;
-                
+
                 cursor: pointer;
                 opacity: .4;
-                
+
                 -webkit-transition: background .5s, opacity .5s;
                 -moz-transition: background .5s, opacity .5s;
                 transition: background .5s, opacity .5s;
@@ -682,7 +685,7 @@ footer {
                 background: #fff;
                 opacity: 1;
             }
-       
+
     /* ---------------------------*\
         $CONTENT
     \* ---------------------------*/
@@ -692,7 +695,7 @@ footer {
         width: 1024px;
         overflow: hidden;
         margin: 0px auto;
-		
+
     }
 
         .content-grid {
@@ -729,11 +732,11 @@ footer {
 		padding:5% 0;
 		height:100%;
 		}
-	}		
-	
- 
-			
-			
+	}
+
+
+
+
     /* ---------------------------*\
         $PRODUCTS
     \* ---------------------------*/
@@ -769,7 +772,7 @@ footer {
             width: 50%;
             float: right;
         }
-        
+
         #contactInfo {
             width: 50%;
             float: left;

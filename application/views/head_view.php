@@ -10,7 +10,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <!--Favicon-->
-        <link rel="icon" type="image/jpg" href="img/favicon.PNG" />
+        <link rel="icon" type="image/jpg" href="<?php echo base_url(). "img/favicon.PNG"; ?>" />
 
         <link rel="stylesheet" href="<?php echo base_url() . 'css/components/normalize.min.css'; ?>" />
         <link rel="stylesheet" href="<?php echo base_url() . 'css/components/bootstrap.css'; ?>" />
