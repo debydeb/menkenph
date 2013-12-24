@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 24-11-2013 a las 00:39:15
+-- Tiempo de generación: 12-12-2013 a las 18:17:49
 -- Versión del servidor: 5.5.24-log
 -- Versión de PHP: 5.3.13
 
@@ -19,6 +19,69 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `menken`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `categorias`
+--
+
+CREATE TABLE IF NOT EXISTS `categorias` (
+  `cat_id` int(3) NOT NULL AUTO_INCREMENT,
+  `cat_name` varchar(50) NOT NULL DEFAULT '',
+  `parent_cat_id` int(3) DEFAULT NULL,
+  PRIMARY KEY (`cat_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `dbmails`
+--
+
+CREATE TABLE IF NOT EXISTS `dbmails` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` text COLLATE utf8_spanish2_ci NOT NULL,
+  `mail` text COLLATE utf8_spanish2_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci AUTO_INCREMENT=6 ;
+
+--
+-- Volcado de datos para la tabla `dbmails`
+--
+
+INSERT INTO `dbmails` (`id`, `nombre`, `mail`) VALUES
+(1, 'mafy', 'mafy@mafys.com.ar'),
+(2, 'adsf', ''),
+(3, '', ''),
+(4, 'asdq asdq', 'asd@sfd'),
+(5, 'probando probando', 'probando@sdf');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `detalles`
+--
+
+CREATE TABLE IF NOT EXISTS `detalles` (
+  `detail_id` int(3) NOT NULL AUTO_INCREMENT,
+  `detail` varchar(250) NOT NULL DEFAULT '',
+  `prod_id` int(3) DEFAULT NULL,
+  `url_img` varchar(250) NOT NULL DEFAULT '',
+  PRIMARY KEY (`detail_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `marcas`
+--
+
+CREATE TABLE IF NOT EXISTS `marcas` (
+  `brand_id` int(3) NOT NULL AUTO_INCREMENT,
+  `brand_name` varchar(50) NOT NULL DEFAULT '',
+  PRIMARY KEY (`brand_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1105,6 +1168,21 @@ INSERT INTO `mph_products` (`ID`, `lvlOne`, `lvlTwo`, `lvlThree`, `name`, `detai
 (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `productos`
+--
+
+CREATE TABLE IF NOT EXISTS `productos` (
+  `prod_id` int(3) NOT NULL AUTO_INCREMENT,
+  `prod_name` varchar(50) NOT NULL DEFAULT '',
+  `cat_id` int(3) DEFAULT NULL,
+  `brand_id` int(3) DEFAULT NULL,
+  `detail_id` int(3) DEFAULT NULL,
+  PRIMARY KEY (`prod_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 

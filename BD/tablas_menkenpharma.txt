@@ -25,5 +25,6 @@ CREATE TABLE `detalles` (
     `detail_id` int(3) NOT NULL AUTO_INCREMENT, 
     `detail` varchar(250) NOT NULL DEFAULT '', 
 	`prod_id` int(3), 
+	`url_img` varchar(250)NOT NULL DEFAULT '', 
     PRIMARY KEY (`detail_id`) 
 )

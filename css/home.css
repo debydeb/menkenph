@@ -1,26 +1,97 @@
 
-@media only screen and (min-width: 860px) {
+  #content {
+        /*box model*/
+        width: 1024px;
+        overflow: hidden;
+        margin: 0px auto;
+		margin:0 auto;
+    }
+#home{
+	margin:0 auto;
+	background-color:#FFF;
+	}
 
-        .content-grid {
-            width: 29%;
-            height: 230px;
+	.inves-garan{
+	float:left;
+	clear:left;
+	width:32%;
+	margin:0px;
+	border:0px;
+	margin-right:20px;
+	}
+	
+	.calidad{
+	float:right;
+	clear:right;
+	width:32%;
+	margin:0px;
+	border:0px;
+	margin-left:20px;
+	}
+	
+   .content-grid, .content-grid-inves-garan  {
+            width: 80%;
+            height: 320px;
             margin: 0 2%;
-            float: left;
-            text-align: center;
+			margin:0 auto;
         }
 
-            .content-grid h1 {
-                height: 55px;
+          .content-grid-inves-garan h1, .content-grid h1{
+				margin:0 auto;
                 text-transform: uppercase;
-                margin-bottom:0px;
-               /* font-family: 'Kautiva', sans-serif;*/
                 font-weight: normal;
                 font-size: 1.5em;
                 color: #143A66;
+				padding-top:70px;
+				padding-bottom:10px;
+            }
+			
+			.content-grid-inves-garan h1{
+				float:rigth;
+			}
+            .content-grid h1{
+				float:left;
             }
 
-            .content-grid p {
+
+            .content-grid p , .content-grid-inves-garan p {
                 color: grey;
 				margin:0;
+				height:auto;
+				text-align:justify;
+				
             }
-}
+			.content-grid p {
+				clear:left;
+				width:90%;
+				
+			}
+			.content-grid-inves-garan p {
+				clear:right;
+				width:98%;
+			
+            }
+
+	@media only screen and (min-width:1024px){
+		#content{
+			width:100%;
+			overflow:hidden;
+			margin: 80px auto;
+			height: auto;
+			margin:0 auto;
+		}
+	 .container{
+		width:100%;
+		padding:5% 0;
+		height:100%;
+		}
+	
+	.content-grid h1{
+		margin-bottom:25px;
+		}
+	.content-grid p, .content-grid-inves-garan p  {
+				margin-top:30px;
+            }
+	}		
+	
+			
